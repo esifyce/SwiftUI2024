@@ -1,0 +1,674 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08BB66FA2B5481250031D602 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BB66F92B5481250031D602 /* AppDelegate.swift */; };
+		08BB66FC2B5481250031D602 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BB66FB2B5481250031D602 /* SceneDelegate.swift */; };
+		08BB66FE2B5481250031D602 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BB66FD2B5481250031D602 /* ViewController.swift */; };
+		08BB67032B5481270031D602 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08BB67022B5481270031D602 /* Assets.xcassets */; };
+		08BB67062B5481270031D602 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08BB67042B5481270031D602 /* LaunchScreen.storyboard */; };
+		08BB67112B54819D0031D602 /* DinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BB67102B54819D0031D602 /* DinnerViewController.swift */; };
+		08BB67142B5481E70031D602 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08BB67132B5481E70031D602 /* Main.storyboard */; };
+		08BB67162B5481FF0031D602 /* DinnerTimeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BB67152B5481FF0031D602 /* DinnerTimeController.swift */; };
+		08BB67182B5482110031D602 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BB67172B5482110031D602 /* Recipe.swift */; };
+		08BB671A2B5482200031D602 /* RecipeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BB67192B5482200031D602 /* RecipeController.swift */; };
+		08BB671E2B5482470031D602 /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BB671D2B5482470031D602 /* RecipeViewController.swift */; };
+		08BB67272B5483590031D602 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08BB67262B5483590031D602 /* WidgetKit.framework */; };
+		08BB67292B5483590031D602 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08BB67282B5483590031D602 /* SwiftUI.framework */; };
+		08BB672C2B5483590031D602 /* DinnerWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BB672B2B5483590031D602 /* DinnerWidgetBundle.swift */; };
+		08BB672E2B5483590031D602 /* DinnerWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BB672D2B5483590031D602 /* DinnerWidgetLiveActivity.swift */; };
+		08BB67302B5483590031D602 /* DinnerWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BB672F2B5483590031D602 /* DinnerWidget.swift */; };
+		08BB67322B54835B0031D602 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08BB67312B54835B0031D602 /* Assets.xcassets */; };
+		08BB67362B54835B0031D602 /* DinnerWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 08BB67242B5483590031D602 /* DinnerWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		08BB67452B5488F00031D602 /* DinnerEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BB67442B5488F00031D602 /* DinnerEntry.swift */; };
+		08BB67462B5488F00031D602 /* DinnerEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BB67442B5488F00031D602 /* DinnerEntry.swift */; };
+		08BB67482B54892E0031D602 /* RecipeController+sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BB67472B54892E0031D602 /* RecipeController+sample.swift */; };
+		08BB67492B54892E0031D602 /* RecipeController+sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BB67472B54892E0031D602 /* RecipeController+sample.swift */; };
+		08BB67502B548B8E0031D602 /* TimeUntilDinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BB674F2B548B8E0031D602 /* TimeUntilDinnerView.swift */; };
+		08BB67512B548B8E0031D602 /* TimeUntilDinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BB674F2B548B8E0031D602 /* TimeUntilDinnerView.swift */; };
+		08BB67532B548BA10031D602 /* RecipeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BB67522B548BA10031D602 /* RecipeImage.swift */; };
+		08BB67542B548BA10031D602 /* RecipeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BB67522B548BA10031D602 /* RecipeImage.swift */; };
+		08BB67572B548BDE0031D602 /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BB67562B548BDE0031D602 /* View+.swift */; };
+		08BB67582B548BDE0031D602 /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BB67562B548BDE0031D602 /* View+.swift */; };
+		08BB675D2B548D630031D602 /* RecipeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BB675C2B548D630031D602 /* RecipeData.swift */; };
+		08BB675F2B548E320031D602 /* DinnerEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BB675E2B548E320031D602 /* DinnerEntryView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		08BB67342B54835B0031D602 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08BB66EE2B5481250031D602 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08BB67232B5483590031D602;
+			remoteInfo = DinnerWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		08BB673A2B54835B0031D602 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				08BB67362B54835B0031D602 /* DinnerWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		08BB66F62B5481250031D602 /* SwiftUIInWidgets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIInWidgets.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		08BB66F92B5481250031D602 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		08BB66FB2B5481250031D602 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		08BB66FD2B5481250031D602 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		08BB67022B5481270031D602 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		08BB67052B5481270031D602 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		08BB67072B5481270031D602 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08BB67102B54819D0031D602 /* DinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinnerViewController.swift; sourceTree = "<group>"; };
+		08BB67132B5481E70031D602 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		08BB67152B5481FF0031D602 /* DinnerTimeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinnerTimeController.swift; sourceTree = "<group>"; };
+		08BB67172B5482110031D602 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		08BB67192B5482200031D602 /* RecipeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeController.swift; sourceTree = "<group>"; };
+		08BB671D2B5482470031D602 /* RecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
+		08BB671F2B5482770031D602 /* DinnerPlan-starter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "DinnerPlan-starter.entitlements"; sourceTree = "<group>"; };
+		08BB67242B5483590031D602 /* DinnerWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DinnerWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		08BB67262B5483590031D602 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		08BB67282B5483590031D602 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		08BB672B2B5483590031D602 /* DinnerWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinnerWidgetBundle.swift; sourceTree = "<group>"; };
+		08BB672D2B5483590031D602 /* DinnerWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinnerWidgetLiveActivity.swift; sourceTree = "<group>"; };
+		08BB672F2B5483590031D602 /* DinnerWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinnerWidget.swift; sourceTree = "<group>"; };
+		08BB67312B54835B0031D602 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		08BB67332B54835B0031D602 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08BB67442B5488F00031D602 /* DinnerEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinnerEntry.swift; sourceTree = "<group>"; };
+		08BB67472B54892E0031D602 /* RecipeController+sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecipeController+sample.swift"; sourceTree = "<group>"; };
+		08BB674F2B548B8E0031D602 /* TimeUntilDinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeUntilDinnerView.swift; sourceTree = "<group>"; };
+		08BB67522B548BA10031D602 /* RecipeImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeImage.swift; sourceTree = "<group>"; };
+		08BB67562B548BDE0031D602 /* View+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+.swift"; sourceTree = "<group>"; };
+		08BB675C2B548D630031D602 /* RecipeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeData.swift; sourceTree = "<group>"; };
+		08BB675E2B548E320031D602 /* DinnerEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinnerEntryView.swift; sourceTree = "<group>"; };
+		08BB67662B548FE40031D602 /* SwiftUIInWidgets.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftUIInWidgets.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08BB66F32B5481250031D602 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08BB67212B5483590031D602 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08BB67292B5483590031D602 /* SwiftUI.framework in Frameworks */,
+				08BB67272B5483590031D602 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08BB66ED2B5481250031D602 = {
+			isa = PBXGroup;
+			children = (
+				08BB66F82B5481250031D602 /* SwiftUIInWidgets */,
+				08BB672A2B5483590031D602 /* DinnerWidget */,
+				08BB67252B5483590031D602 /* Frameworks */,
+				08BB66F72B5481250031D602 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		08BB66F72B5481250031D602 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08BB66F62B5481250031D602 /* SwiftUIInWidgets.app */,
+				08BB67242B5483590031D602 /* DinnerWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		08BB66F82B5481250031D602 /* SwiftUIInWidgets */ = {
+			isa = PBXGroup;
+			children = (
+				08BB67662B548FE40031D602 /* SwiftUIInWidgets.entitlements */,
+				08BB671F2B5482770031D602 /* DinnerPlan-starter.entitlements */,
+				08BB67122B5481CD0031D602 /* Data */,
+				08BB670E2B54816A0031D602 /* Module */,
+				08BB670D2B5481310031D602 /* Helpers */,
+				08BB67072B5481270031D602 /* Info.plist */,
+			);
+			path = SwiftUIInWidgets;
+			sourceTree = "<group>";
+		};
+		08BB670D2B5481310031D602 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				08BB66F92B5481250031D602 /* AppDelegate.swift */,
+				08BB66FB2B5481250031D602 /* SceneDelegate.swift */,
+				08BB66FD2B5481250031D602 /* ViewController.swift */,
+				08BB67022B5481270031D602 /* Assets.xcassets */,
+				08BB67132B5481E70031D602 /* Main.storyboard */,
+				08BB67042B5481270031D602 /* LaunchScreen.storyboard */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		08BB670E2B54816A0031D602 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				08BB671C2B5482380031D602 /* Recipe */,
+				08BB671B2B5482340031D602 /* Dinner */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		08BB67122B5481CD0031D602 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				08BB67152B5481FF0031D602 /* DinnerTimeController.swift */,
+				08BB67172B5482110031D602 /* Recipe.swift */,
+				08BB67192B5482200031D602 /* RecipeController.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		08BB671B2B5482340031D602 /* Dinner */ = {
+			isa = PBXGroup;
+			children = (
+				08BB67102B54819D0031D602 /* DinnerViewController.swift */,
+			);
+			path = Dinner;
+			sourceTree = "<group>";
+		};
+		08BB671C2B5482380031D602 /* Recipe */ = {
+			isa = PBXGroup;
+			children = (
+				08BB671D2B5482470031D602 /* RecipeViewController.swift */,
+			);
+			path = Recipe;
+			sourceTree = "<group>";
+		};
+		08BB67252B5483590031D602 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08BB67262B5483590031D602 /* WidgetKit.framework */,
+				08BB67282B5483590031D602 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08BB672A2B5483590031D602 /* DinnerWidget */ = {
+			isa = PBXGroup;
+			children = (
+				08BB67552B548BB90031D602 /* Extensions */,
+				08BB674E2B548B830031D602 /* View */,
+				08BB674D2B5489A10031D602 /* Data */,
+				08BB67442B5488F00031D602 /* DinnerEntry.swift */,
+				08BB672B2B5483590031D602 /* DinnerWidgetBundle.swift */,
+				08BB672D2B5483590031D602 /* DinnerWidgetLiveActivity.swift */,
+				08BB67472B54892E0031D602 /* RecipeController+sample.swift */,
+				08BB672F2B5483590031D602 /* DinnerWidget.swift */,
+				08BB675E2B548E320031D602 /* DinnerEntryView.swift */,
+				08BB67312B54835B0031D602 /* Assets.xcassets */,
+				08BB67332B54835B0031D602 /* Info.plist */,
+			);
+			path = DinnerWidget;
+			sourceTree = "<group>";
+		};
+		08BB674D2B5489A10031D602 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				08BB675C2B548D630031D602 /* RecipeData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		08BB674E2B548B830031D602 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				08BB674F2B548B8E0031D602 /* TimeUntilDinnerView.swift */,
+				08BB67522B548BA10031D602 /* RecipeImage.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		08BB67552B548BB90031D602 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				08BB67562B548BDE0031D602 /* View+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		08BB66F52B5481250031D602 /* SwiftUIInWidgets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08BB670A2B5481270031D602 /* Build configuration list for PBXNativeTarget "SwiftUIInWidgets" */;
+			buildPhases = (
+				08BB66F22B5481250031D602 /* Sources */,
+				08BB66F32B5481250031D602 /* Frameworks */,
+				08BB66F42B5481250031D602 /* Resources */,
+				08BB673A2B54835B0031D602 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08BB67352B54835B0031D602 /* PBXTargetDependency */,
+			);
+			name = SwiftUIInWidgets;
+			productName = SwiftUIInWidgets;
+			productReference = 08BB66F62B5481250031D602 /* SwiftUIInWidgets.app */;
+			productType = "com.apple.product-type.application";
+		};
+		08BB67232B5483590031D602 /* DinnerWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08BB67372B54835B0031D602 /* Build configuration list for PBXNativeTarget "DinnerWidgetExtension" */;
+			buildPhases = (
+				08BB67202B5483590031D602 /* Sources */,
+				08BB67212B5483590031D602 /* Frameworks */,
+				08BB67222B5483590031D602 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DinnerWidgetExtension;
+			productName = DinnerWidgetExtension;
+			productReference = 08BB67242B5483590031D602 /* DinnerWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08BB66EE2B5481250031D602 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					08BB66F52B5481250031D602 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					08BB67232B5483590031D602 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 08BB66F12B5481250031D602 /* Build configuration list for PBXProject "SwiftUIInWidgets" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 08BB66ED2B5481250031D602;
+			productRefGroup = 08BB66F72B5481250031D602 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				08BB66F52B5481250031D602 /* SwiftUIInWidgets */,
+				08BB67232B5483590031D602 /* DinnerWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		08BB66F42B5481250031D602 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08BB67142B5481E70031D602 /* Main.storyboard in Resources */,
+				08BB67062B5481270031D602 /* LaunchScreen.storyboard in Resources */,
+				08BB67032B5481270031D602 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08BB67222B5483590031D602 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08BB67322B54835B0031D602 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		08BB66F22B5481250031D602 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08BB67452B5488F00031D602 /* DinnerEntry.swift in Sources */,
+				08BB67532B548BA10031D602 /* RecipeImage.swift in Sources */,
+				08BB67112B54819D0031D602 /* DinnerViewController.swift in Sources */,
+				08BB67502B548B8E0031D602 /* TimeUntilDinnerView.swift in Sources */,
+				08BB67572B548BDE0031D602 /* View+.swift in Sources */,
+				08BB67482B54892E0031D602 /* RecipeController+sample.swift in Sources */,
+				08BB66FE2B5481250031D602 /* ViewController.swift in Sources */,
+				08BB671A2B5482200031D602 /* RecipeController.swift in Sources */,
+				08BB66FA2B5481250031D602 /* AppDelegate.swift in Sources */,
+				08BB671E2B5482470031D602 /* RecipeViewController.swift in Sources */,
+				08BB67182B5482110031D602 /* Recipe.swift in Sources */,
+				08BB66FC2B5481250031D602 /* SceneDelegate.swift in Sources */,
+				08BB67162B5481FF0031D602 /* DinnerTimeController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08BB67202B5483590031D602 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08BB67462B5488F00031D602 /* DinnerEntry.swift in Sources */,
+				08BB67492B54892E0031D602 /* RecipeController+sample.swift in Sources */,
+				08BB67302B5483590031D602 /* DinnerWidget.swift in Sources */,
+				08BB67582B548BDE0031D602 /* View+.swift in Sources */,
+				08BB67512B548B8E0031D602 /* TimeUntilDinnerView.swift in Sources */,
+				08BB675F2B548E320031D602 /* DinnerEntryView.swift in Sources */,
+				08BB672E2B5483590031D602 /* DinnerWidgetLiveActivity.swift in Sources */,
+				08BB675D2B548D630031D602 /* RecipeData.swift in Sources */,
+				08BB672C2B5483590031D602 /* DinnerWidgetBundle.swift in Sources */,
+				08BB67542B548BA10031D602 /* RecipeImage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		08BB67352B54835B0031D602 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08BB67232B5483590031D602 /* DinnerWidgetExtension */;
+			targetProxy = 08BB67342B54835B0031D602 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		08BB67042B5481270031D602 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08BB67052B5481270031D602 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		08BB67082B5481270031D602 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		08BB67092B5481270031D602 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		08BB670B2B5481270031D602 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwiftUIInWidgets/SwiftUIInWidgets.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5HDJX97Z93;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUIInWidgets/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.esifyce.SwiftUIInWidgets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		08BB670C2B5481270031D602 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwiftUIInWidgets/SwiftUIInWidgets.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5HDJX97Z93;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUIInWidgets/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.esifyce.SwiftUIInWidgets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		08BB67382B54835B0031D602 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5HDJX97Z93;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DinnerWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DinnerWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.esifyce.SwiftUIInWidgets.DinnerWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		08BB67392B54835B0031D602 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5HDJX97Z93;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DinnerWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DinnerWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.esifyce.SwiftUIInWidgets.DinnerWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		08BB66F12B5481250031D602 /* Build configuration list for PBXProject "SwiftUIInWidgets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08BB67082B5481270031D602 /* Debug */,
+				08BB67092B5481270031D602 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08BB670A2B5481270031D602 /* Build configuration list for PBXNativeTarget "SwiftUIInWidgets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08BB670B2B5481270031D602 /* Debug */,
+				08BB670C2B5481270031D602 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08BB67372B54835B0031D602 /* Build configuration list for PBXNativeTarget "DinnerWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08BB67382B54835B0031D602 /* Debug */,
+				08BB67392B54835B0031D602 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08BB66EE2B5481250031D602 /* Project object */;
+}
